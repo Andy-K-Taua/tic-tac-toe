@@ -21,12 +21,12 @@ const checkGamesStatus = () => {
   const bottomLeft = cellDivs[6].classList[2]
   const bottomMiddle = cellDivs[7].classList[2]
   const bottomRight = cellDivs[8].classList[2]
-
+}
 
 //Determining the winner
 
 //These are the event handlers
-const handleReset = (e) => {s
+const handleReset = (e) => {
   console.log(e);
 };
 
