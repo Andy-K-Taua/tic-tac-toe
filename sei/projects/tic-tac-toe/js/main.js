@@ -11,7 +11,6 @@ let winner = null;
 
 //functions
 
-
 const checkGamesStatus = () => {
   const topLeft = cellDivs[0].classList[2]
   const topMiddle = cellDivs[1].classList[2]
@@ -23,19 +22,8 @@ const checkGamesStatus = () => {
   const bottomMiddle = cellDivs[7].classList[2]
   const bottomRight = cellDivs[8].classList[2]
 
-  // console.log(topLeft, topMiddle, topRight, middleLeft, middleMiddle, middleRight, bottomLeft, bottomMiddle, bottomRight)
 
-//Determining winner
-  if (topLeft && topLeft === topMiddle && topLeft === topRight) {
-    handleWin (topLeft);
-  } else if (middleLeft && middleLeft === middleMiddle && middleLeft === middleRight){
-    handleWin(middleLeft);
-  } else if (bottomLeft && bottomLeft === bottomRight){
-    handleWin(bottomLeft)
-  } else if (topLeft && topLeft === middleLeft && topLeft === bottomLeft){
-    handleWin(topleft)
-  }
-};
+//Determining the winner
 
 //These are the event handlers
 const handleReset = (e) => {s
@@ -68,5 +56,5 @@ const handleCellClick = (e) => {
 resetDiv.addEventListener('click', handleReset);
 
 for (const cellDiv of cellDivs) {
-  cellDiv.addEventListener('click', handleCellClick)
+  cellDiv.addEventListener('click', handleCellClick);
 }

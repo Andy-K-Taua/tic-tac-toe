@@ -17,7 +17,7 @@ body{
   background: #02010a;
   margin: 50px;
   padding: 50px;
-  border-radius: 45px;
+  border-radius: 15px;
 
 }
 
@@ -27,7 +27,7 @@ body{
 
 .status-action {
   display: flex;
-  margin-top: 25px;
+  margin-top: 60px;
   font-size: 25px;
   justify-content: space-around;
 }
@@ -53,6 +53,7 @@ body{
   height: 200px;
   width: 200px;
   background: #f5f5fa;
+  border-radius: 12px;
   cursor: pointer;
   display: flex;
   justify-content: center;
