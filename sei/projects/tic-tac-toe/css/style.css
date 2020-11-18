@@ -34,20 +34,13 @@ body{
 
 }
 .title {
-  text-align: center; /* step7 this will align the centre text*/
+  text-align: center;
+  margin-top: 20px;/* step7 this will align the centre text*/
 }
 
-/*
-
+#scoreboard {
+  font-size: 14pt;
 }
-
-.reset {
-  cursor: pointer; /* step9 continues ..
-}
-
-.reset:hover {
-  color: #1346d1;
-} step10 continues ..*/
 
 .game-grid {  /*step11 continues*/
   background: #02010a;
