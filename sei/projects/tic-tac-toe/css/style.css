@@ -10,6 +10,7 @@
 body{
   color: #20b51d;
   font-family: 'Goldman', cursive;
+  font-size: xx-large;
 
 }
 
@@ -23,7 +24,7 @@ body{
 
 }
 
-.container1 {
+.scoreboard {
   background: black;
   margin: 50px auto;
   padding: 30px;
@@ -69,6 +70,7 @@ body{
   align-items: center;
 
 }
+
 
 .x::after {
   content: '✕';
