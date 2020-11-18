@@ -14,7 +14,6 @@ let status = true;
 
 
 //functions step14 .. continues
-
 const checkGamesStatus = () => {
   const topLeft = cellDivs[0].classList[2]
   const topMiddle = cellDivs[1].classList[2]
@@ -25,78 +24,105 @@ const checkGamesStatus = () => {
   const bottomLeft = cellDivs[6].classList[2]
   const bottomMiddle = cellDivs[7].classList[2]
   const bottomRight = cellDivs[8].classList[2]
+
   // console.log(topLeft, topMiddle, topRight)
-const winMessageOne = document.querySelector("#winMessageOne")
-const winMessageTwo = document.querySelector("#winMessageTwo")
-const winMessageThree = document.querySelector("#winMessageThree")
+
+const winMess1 = document.querySelector("#winMess1")
+const winMess2 = document.querySelector("#winMess2")
+const winMess3 = document.querySelector("#winMess3")
+const winMess4 = document.querySelector("#winMess4")
+const winMess5 = document.querySelector("#winMess5")
+const winMess6 = document.querySelector("#winMess6")
+const winMess7 = document.querySelector("#winMess7")
+const winMess8 = document.querySelector("#winMess8")
+const winMess9 = document.querySelector("#winMess9")
+const winMess10 = document.querySelector("#winMess10")
+const winMess11 = document.querySelector("#winMess11")
+const winMess12 = document.querySelector("#winMess12")
+const winMess13 = document.querySelector("#winMess13")
+const winMess14 = document.querySelector("#winMess14")
+const winMess15 = document.querySelector("#winMess15")
+const winMess16 = document.querySelector("#winMess16")
+
 //Across
   if (topLeft === "x" && topMiddle === "x" && topRight === "x"){
     console.log("x wins");
-    winMessageOne.innerHTML="x wins on top row"
+    winMess1.innerHTML="x wins top row"
   }
   if (middleLeft === "x" && middleMiddle === "x" && middleRight === "x"){
     console.log("x wins");
-    winMessageTwo.innerHTML="x wins on middle row"
+    winMess2.innerHTML="x wins middle row"
   }
   if (bottomLeft === "x" && bottomMiddle === "x" && bottomRight === "x"){
     console.log("x wins");
-    winMessageThree.innerHTML="x wins on bottom row"
+    winMess3.innerHTML="x wins bottom row"
   }
 
 //Down
   if (topLeft === "x" && middleLeft === "x" && bottomLeft === "x"){
     console.log("x wins");
-    winMessageFour.innerHTML="x wins on left column"
+    winMess4.innerHTML="x wins left column"
   }
   if (topMiddle === "x" && middleMiddle === "x" && bottomMiddle === "x"){
     console.log("x wins");
-    winMessageFive.innerHTML="x wins middle column"
+    winMess5.innerHTML="x wins middle column"
   }
   if (topRight === "x" && middleRight === "x" && bottomRight === "x"){
     console.log("x wins");
+    winMess6.innerHTML="x wins right column"
   }
 
 //Diagonal from the topLeft
  if (topLeft === "x" && middleMiddle === "x" && bottomRight === "x"){
    console.log("x wins");
+   winMess7.innerHTML="x wins diagonal"
  }
 
  //Diagonal from topRight
  if (topRight === "x" && middleMiddle === "x" && bottomLeft === "x"){
    console.log("x wins");
+   winMess8.innerHTML="x wins diagonal"
  }
  //========================================
 
  //Across
  if (topLeft === "o" && topMiddle === "o" && topRight === "o"){
    console.log("o wins");
+   winMess9.innerHTML="o wins top row"
  }
- if (middleLeft === "x" && middleMiddle === "o" && middleRight === "o"){
+ if (middleLeft === "o" && middleMiddle === "o" && middleRight === "o"){
    console.log("o wins");
+   winMess10.innerHTML="o wins middle row"
  }
- if (bottomLeft === "x" && bottomMiddle === "o" && bottomRight === "o"){
+ if (bottomLeft === "o" && bottomMiddle === "o" && bottomRight === "o"){
    console.log("o wins");
+   winMess11.innerHTML="o wins bottom row"
  }
 
 //Down
  if (topLeft === "o" && middleLeft === "o" && bottomLeft === "o"){
    console.log("o wins");
+   winMess12.innerHTML="o wins left column"
  }
  if (topMiddle === "o" && middleMiddle === "o" && bottomMiddle === "o"){
    console.log("o wins");
+   winMess13.innerHTML="o wins middle column"
  }
  if (topRight === "o" && middleRight === "o" && bottomRight === "o"){
    console.log("o wins");
+   winMess14.innerHTML="o wins right column"
  }
 
 //Diagonal from the topLeft
 if (topLeft === "o" && middleMiddle === "o" && bottomRight === "o"){
   console.log("o wins");
+  winMess15.innerHTML="o wins diagonal"
 }
 
 //Diagonal from topRight
 if (topRight === "o" && middleMiddle === "o" && bottomLeft === "o"){
   console.log("o wins");
+  winMess16.innerHTML="o wins diagonal"
 }
 
 
