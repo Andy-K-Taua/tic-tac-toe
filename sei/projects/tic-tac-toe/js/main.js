@@ -25,26 +25,32 @@ const checkGamesStatus = () => {
   const bottomLeft = cellDivs[6].classList[2]
   const bottomMiddle = cellDivs[7].classList[2]
   const bottomRight = cellDivs[8].classList[2]
-  console.log(topLeft, topMiddle, topRight)
-const winMessage = document.querySelector("#winMessage")
+  // console.log(topLeft, topMiddle, topRight)
+const winMessageOne = document.querySelector("#winMessageOne")
+const winMessageTwo = document.querySelector("#winMessageTwo")
+const winMessageThree = document.querySelector("#winMessageThree")
 //Across
   if (topLeft === "x" && topMiddle === "x" && topRight === "x"){
     console.log("x wins");
-    winMessage.innerHTML="x wins on top row";
+    winMessageOne.innerHTML="x wins on top row"
   }
   if (middleLeft === "x" && middleMiddle === "x" && middleRight === "x"){
     console.log("x wins");
+    winMessageTwo.innerHTML="x wins on middle row"
   }
   if (bottomLeft === "x" && bottomMiddle === "x" && bottomRight === "x"){
     console.log("x wins");
+    winMessageThree.innerHTML="x wins on bottom row"
   }
 
 //Down
   if (topLeft === "x" && middleLeft === "x" && bottomLeft === "x"){
     console.log("x wins");
+    winMessageFour.innerHTML="x wins on left column"
   }
   if (topMiddle === "x" && middleMiddle === "x" && bottomMiddle === "x"){
     console.log("x wins");
+    winMessageFive.innerHTML="x wins middle column"
   }
   if (topRight === "x" && middleRight === "x" && bottomRight === "x"){
     console.log("x wins");
