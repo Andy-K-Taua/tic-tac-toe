@@ -9,28 +9,29 @@
 /* tags go below. Step5 */
 body{
   color: #20b51d;
-  display: flex;   /*flex helps with centering the image in the console*/
-  justify-content: center; /* This centres everything in the body, you also have the option to change center to flex-end, flex-start*/
   font-family: 'Goldman', cursive;
 
 }
 
-.container { /* Main image/container */
+.gameBox { /* Main image/container */
   background: #02010a;
-  margin: 50px;
+  margin: 50px auto;
   padding: 30px;
   border-radius: 15px;
+  width: 630px;
+
 
 }
 
 .container1 {
   background: black;
-  margin: 50px;
+  margin: 50px auto;
   padding: 30px;
   border-radius: 20px;
+  width: 630px;
+  height: 200px;
 
 }
-
 .title {
   text-align: center; /* step7 this will align the centre text*/
 }
