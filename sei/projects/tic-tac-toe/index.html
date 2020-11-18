@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/style.css"> <!-- //Step1 - connect style sheet -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
 
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">Tic Tac Toe</h1>
-    <div class="status-action">
-    <div class="status"></div>
-    <div class="reset"></div>
- </div>
- <div class="game-grid">
+    <div class="container"> <!-- Step4 creating container object which is the main object. -->
+    <h1 class="title">Tic Tac Toe</h1> <!-- Step6 putting in title -->
+  <div class="status-action"></div>
+    <!-- <div class="status"></div>
+    <div class="reset"></div> -->
+
+<div class="game-grid">  <!-- step10 creating divs to assign cell classes. Started off with game cell no distinguishing factor till emplementing event target classList in main j -->
      <div class="game-cell top-left"></div>
      <div class="game-cell top-middle"></div>
      <div class="game-cell top-right"></div>
@@ -27,6 +27,7 @@
      <div class="game-cell bottom-right"></div>
  </div>
 </div>
-<script src="js/main.js"></script>
+<div class="container1">
+<script src="js/main.js"></script> <!-- Step2 connect main.js -->
 </body>
 </html>

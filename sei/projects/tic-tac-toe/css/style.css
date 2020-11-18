@@ -1,63 +1,72 @@
-*{
+/**{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} Step3 - Personal preference for resizing/defaulting back to 0 */
 
+
+
+/* tags go below. Step5 */
 body{
   color: #20b51d;
-  display: flex;
-  font font-family: sans-serif;
-  justify-content: center;
+  display: flex;   /*flex helps with centering the image in the console*/
+  justify-content: center; /* This centres everything in the body, you also have the option to change center to flex-end, flex-start*/
   font-family: 'Goldman', cursive;
 
 }
 
-.container {
+.container { /* Main image/container */
   background: #02010a;
   margin: 50px;
-  padding: 50px;
+  padding: 30px;
   border-radius: 15px;
 
 }
 
-.title {
-  text-align: center;
+.container1 {
+  background: black;
+  margin: 50px;
+  padding: 30px;
+  border-radius: 20px;
+
 }
 
-.status-action {
-  display: flex;
-  margin-top: 60px;
-  font-size: 25px;
-  justify-content: space-around;
+.title {
+  text-align: center; /* step7 this will align the centre text*/
+}
+
+/*
+
 }
 
 .reset {
-  cursor: pointer;
+  cursor: pointer; /* step9 continues ..
 }
 
 .reset:hover {
   color: #1346d1;
-}
+} step10 continues ..*/
 
-.game-grid {
+.game-grid {  /*step11 continues*/
   background: #02010a;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 15px;
+  grid-template-rows: repeat(3, 1fr); /*grid-template specifies the number of columns and rows you want. The repeat function allows 3 spaces, given the spaces I want them to be equally devided, meaning 3 equal spaces */
+  grid-gap: 15px;  /*Gives the even gaps between the grid cells*/
   margin-top: 50px;
+
 }
 
-.game-cell {
+.game-cell { /*step12 continues*/
   height: 200px;
-  width: 200px;
+  width: 200px; /*Height and width of each cell*/
   background: #f5f5fa;
-  border-radius: 12px;
-  cursor: pointer;
+  border-radius: 12px; /*smoothens out the corners of each cell*/
+  cursor: pointer; /*tells the user they can click on the cell*/
   display: flex;
-  justify-content: center;
+  justify-content: center;/* users display flex together with - justify content to center cell*/
   align-items: center;
+
 }
 
 .x::after {
@@ -67,5 +76,5 @@ body{
 
 .o::after {
   content: '○';
-  font-size: 300px;
+  font-size: 290px;
 }
