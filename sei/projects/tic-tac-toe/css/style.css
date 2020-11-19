@@ -1,12 +1,4 @@
-/**{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} Step3 - Personal preference for resizing/defaulting back to 0 */
 
-
-
-/* tags go below. Step5 */
 body{
   color: #20b51d;
   font-family: 'Goldman', cursive;
@@ -14,7 +6,7 @@ body{
 
 }
 
-.gameBox { /* Main image/container */
+.gameBox {
   background: #02010a;
   margin: 50px auto;
   padding: 30px;
@@ -35,31 +27,31 @@ body{
 }
 .title {
   text-align: center;
-  margin-top: 20px;/* step7 this will align the centre text*/
+  margin-top: 20px;
 }
 
 #scoreboard {
   font-size: 30pt;
 }
 
-.game-grid {  /*step11 continues*/
+.game-grid {
   background: #02010a;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr); /*grid-template specifies the number of columns and rows you want. The repeat function allows 3 spaces, given the spaces I want them to be equally devided, meaning 3 equal spaces */
-  grid-gap: 15px;  /*Gives the even gaps between the grid cells*/
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
   margin-top: 50px;
 
 }
 
-.game-cell { /*step12 continues*/
+.game-cell {
   height: 200px;
-  width: 200px; /*Height and width of each cell*/
+  width: 200px;
   background: #f5f5fa;
-  border-radius: 12px; /*smoothens out the corners of each cell*/
-  cursor: pointer; /*tells the user they can click on the cell*/
+  border-radius: 12px;
+  cursor: pointer;
   display: flex;
-  justify-content: center;/* users display flex together with - justify content to center cell*/
+  justify-content: center;
   align-items: center;
 
 }

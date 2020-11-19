@@ -1,21 +1,13 @@
 
-
-// step13 This is where we will be grabbing our html elements
-
-// const statusDiv = document.querySelector('.status');
 const resetDiv = document.querySelector('.reset');
 
 const cellDivs = document.querySelectorAll('.game-cell');
+const $cellDivs = $('.game-cell');
 
-//These are the game variables .. continues
-// let gameIsLive = true;
 let status = true;
-// let winner = null;
 
-
-//functions step14 .. continues
 const checkGamesStatus = function(player) {
-  const topLeft = cellDivs[0].classList[2]
+  const topLeft = $cellDivs.eq(0).hasClass(player)
   const topMiddle = cellDivs[1].classList[2]
   const topRight = cellDivs[2].classList[2]
   const middleLeft = cellDivs[3].classList[2]
@@ -25,13 +17,11 @@ const checkGamesStatus = function(player) {
   const bottomMiddle = cellDivs[7].classList[2]
   const bottomRight = cellDivs[8].classList[2]
 
-  // console.log(topLeft, topMiddle, topRight)
-
 const winMessage = document.querySelector("#winMessage")
 
+//================== Across
 
-//Across
-  if (topLeft === player && topMiddle === player && topRight === player){
+  if (topLeft && topMiddle && topRight){
     console.log(`${player} wins`);
     winMessage.innerHTML=(`${player} wins top row`)
   }
@@ -44,10 +34,11 @@ const winMessage = document.querySelector("#winMessage")
     winMessage.innerHTML=(`${player} wins bottom row`)
   }
 
-//Down
+//=================== Down
+
   if (topLeft === player && middleLeft === player && bottomLeft === player){
     console.log(`${player} wins`);
-    winMessage.innerHTML=(`${player} wins left column`)
+    winMessage.innerHTML = `${player} wins left column`;
   }
   if (topMiddle === player && middleMiddle === player && bottomMiddle === player){
     console.log(`${player} wins`);
@@ -58,38 +49,29 @@ const winMessage = document.querySelector("#winMessage")
     winMessage.innerHTML=(`${player} wins right column`)
   }
 
-//Diagonal from the topLeft
+//========== Diagonal from the topLeft
+
  if (topLeft === player && middleMiddle === player && bottomRight === player){
    console.log(`${player} wins`);
    winMessage.innerHTML=(`${player} wins diagonal`)
  }
 
- //Diagonal from topRight
+ // ========== Diagonal from topRight
+
  if (topRight === player && middleMiddle === player && bottomLeft === player){
    console.log(`${player} wins`);
    winMessage.innerHTML=(`${player} wins diagonal`)
  }
- //========================================
 
-
-
-
-}; //End of check game status
-
-//Determining the winner
-
-//These are the event handlers
-
-// const handleReset = (e) => {
-//   console.log(e);
-// };
+};
 
 const handleCellClick = (e) => {
-  const classList = e.target.classList; //When console logging event (e) there is a 'target' attribute. Within the target attribute there is what you call a classList. This has all the classes for the element that is in question.
+
+  const classList = e.target.classList;
   const location = classList[1];
 
   if(classList[2] === 'x' || classList[2] === 'o'){
-    return; //go through and explain what this actually does. Prevents a click from being allowed to happen in a square that is already occupied by a player
+    return;
   }
 
   if (status){
@@ -105,11 +87,12 @@ const handleCellClick = (e) => {
   }
 };
 
+// ========== These are the event listeners
 
-// These are the event listeners
 // resetDiv.addEventListener('click', handleReset);
 
 for (const cellDiv of cellDivs) {
   cellDiv.addEventListener('click', handleCellClick);
+  console.log(cellDiv);
 }
 // This is a 'for of' loop - this will add EventListener to each of our elements. What happens is this will loop within the each of the elements within cellDivs and store it in cellDiv
