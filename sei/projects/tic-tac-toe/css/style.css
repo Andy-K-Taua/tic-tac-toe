@@ -48,7 +48,6 @@ body{
 
 #resetButton {
   color: Grey;
-  opacity: 0.5;
   cursor: pointer;
 
 }
@@ -73,12 +72,10 @@ body{
   align-items: center;
 }
 
-
-
 .x::after {
   content: '✕';
   font-size: 150px;
-}
+} /*used the pseudo element for specific styling, xbox x & o - */
 
 .o::after {
   content: '○';

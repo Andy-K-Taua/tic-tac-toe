@@ -2,7 +2,6 @@
 
 const $cellDivs = $('.game-cell');
 
-
 let currentPlayer = "x"
 let xWins = 0;
 let oWins = 0;
@@ -91,6 +90,7 @@ $("#resetButton").on("click", function (){
 $cellDivs.on("click", function (){
 
   //check if the clicked square is occupied and if it is we can ignore the click
+
   if( $(this).hasClass('x')  || $(this).hasClass('o') ){
     return; //this means to leave the function before it has the chance to process the click
   }
