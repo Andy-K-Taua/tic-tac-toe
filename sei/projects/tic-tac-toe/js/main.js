@@ -113,6 +113,7 @@ $cellDivs.on("click", function (){
     const isWin = checkGamesStatus('o');
     if ( isWin ){
       oWins++;
+      $("#oWins").html(`o total: ${oWins}`)
     }
 
     currentPlayer ='x'; // Switch back to the other player

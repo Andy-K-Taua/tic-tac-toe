@@ -1,6 +1,6 @@
 
 body{
-  color: #20b51d;
+  color: #3aeb34;
   font-family: 'Goldman', cursive;
   font-size: xx-large;
 
@@ -20,7 +20,10 @@ body{
   padding: 30px;
   border-radius: 20px;
   width: 630px;
-  height: 200px;
+  height: 300px;
+  border-bottom-width: 26px;
+  padding-bottom: 64px;
+
 }
 
 .title {
@@ -30,19 +33,24 @@ body{
 
 #scoreboard {
   font-size: 30pt;
-  text-align-last: left;
+  text-align: center;
 }
 
 #xWins {
-  font-size: 15pt;
-  margin-right: 90px;
+  font-size: 20pt;
   text-align-last: right;
 }
 
 #oWins {
-  font-size: 15pt;
-  margin-right: 90px;
+  font-size: 20pt;
   text-align-last: right;
+}
+
+#resetButton {
+  color: Grey;
+  opacity: 0.5;
+  cursor: pointer;
+
 }
 
 .game-grid {
@@ -64,6 +72,8 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+
 
 .x::after {
   content: '✕';
