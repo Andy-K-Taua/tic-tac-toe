@@ -1,10 +1,12 @@
 
-const resetDiv = document.querySelector('.reset');
 
-// const cellDivs = document.querySelectorAll('.game-cell');
 const $cellDivs = $('.game-cell');
 
-let status = true;
+
+let currentPlayer = "x"
+let xWins = 0;
+let oWins = 0;
+let numClicks = 0;
 
 const checkGamesStatus = function(player) {
   const topLeft = $cellDivs.eq(0).hasClass(player)
@@ -23,76 +25,96 @@ const $winMessage = $("#winMessage");
 
   if (topLeft && topMiddle && topRight){
     console.log(`${player} wins`);
-    winMessage.innerHTML=(`${player} wins top row`)
+    $("#winMessage").html(`${player} wins top row`)
+    return true;
   }
   if (middleLeft && middleMiddle && middleRight){
     console.log(`${player} wins`);
-    winMessage.innerHTML=(`${player} wins middle row`)
+    $("#winMessage").html(`${player} wins middle row`)
+    return true;
   }
   if (bottomLeft && bottomMiddle && bottomRight){
     console.log(`${player} wins`);
-    winMessage.innerHTML=(`${player} wins bottom row`)
+    $("#winMessage").html(`${player} wins bottom row`)
+    return true;
   }
 
 //=================== Down
 
   if (topLeft && middleLeft && bottomLeft){
     console.log(`${player} wins`);
-    winMessage.innerHTML = `${player} wins left column`;
+    $("#winMessage").html(`${player} wins left column`)
+    return true;
   }
   if (topMiddle && middleMiddle && bottomMiddle){
     console.log(`${player} wins`);
-    winMessage.innerHTML=(`${player} wins middle column`)
+    $("#winMessage").html(`${player} wins middle column`)
+    return true;
   }
   if (topRight && middleRight && bottomRight){
     console.log(`${player} wins`);
-    winMessage.innerHTML=(`${player} wins right column`)
+    $("#winMessage").html(`${player} wins right column`)
+    return true;
   }
 
 //========== Diagonal from the topLeft
 
  if (topLeft && middleMiddle && bottomRight){
    console.log(`${player} wins`);
-   winMessage.innerHTML=(`${player} wins diagonal`)
+   $("#winMessage").html(`${player} wins diagonal`)
+   return true;
  }
 
  // ========== Diagonal from topRight
 
  if (topRight && middleMiddle && bottomLeft){
    console.log(`${player} wins`);
-   winMessage.innerHTML=(`${player} wins diagonal`)
+   $("#winMessage").html(`${player} wins diagonal`)
+   return true;
  }
 
-};
+ if(numClicks === 9){
+   $("#winMessage").html(`Draw`)
 
-const handleCellClick = (e) => {
+ }
 
-  const classList = e.target.classList;
-  const location = classList[1];
+ return false; // We will only get here if no win was found
 
-  if(classList[2] === 'x' || classList[2] === 'o'){
-    return;
+}; //End of checkGamesStatus function
+
+
+$("#resetButton").on("click", function (){
+  $cellDivs.removeClass('x o');
+  numClicks = 0;
+});
+
+$cellDivs.on("click", function (){
+
+  //check if the clicked square is occupied and if it is we can ignore the click
+  if( $(this).hasClass('x')  || $(this).hasClass('o') ){
+    return; //this means to leave the function before it has the chance to process the click
   }
 
-  if (status){
-    classList.add('x');
-    checkGamesStatus('x');
+  numClicks++;
 
-    status = !status;
-  } else {
-    classList.add('o');
-    checkGamesStatus('o');
+  if ( currentPlayer === 'x'){
+    // It is xs turn
+    $(this).addClass('x');
+    const isWin = checkGamesStatus('x');
+    if ( isWin ){
+      xWins++;
+      $("#xWins").html(`x total: ${xWins}`)
+    }
+    currentPlayer = 'o'; // Switch back to the other player
 
-    status = !status;
+    } else {
+    // It is os turn
+    $(this).addClass('o');
+    const isWin = checkGamesStatus('o');
+    if ( isWin ){
+      oWins++;
+    }
+
+    currentPlayer ='x'; // Switch back to the other player
   }
-};
-
-// ========== These are the event listeners
-
-// resetDiv.addEventListener('click', handleReset);
-
-for (const cellDiv of $cellDivs) {
-  cellDiv.addEventListener('click', handleCellClick);
-
-}
-// This is a 'for of' loop - this will add EventListener to each of our elements. What happens is this will loop within the each of the elements within cellDivs and store it in cellDiv
+}); //End of click handler

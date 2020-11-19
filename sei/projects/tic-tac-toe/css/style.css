@@ -12,8 +12,6 @@ body{
   padding: 30px;
   border-radius: 15px;
   width: 630px;
-
-
 }
 
 .scoreboard {
@@ -23,8 +21,8 @@ body{
   border-radius: 20px;
   width: 630px;
   height: 200px;
-
 }
+
 .title {
   text-align: center;
   margin-top: 20px;
@@ -32,6 +30,19 @@ body{
 
 #scoreboard {
   font-size: 30pt;
+  text-align-last: left;
+}
+
+#xWins {
+  font-size: 15pt;
+  margin-right: 90px;
+  text-align-last: right;
+}
+
+#oWins {
+  font-size: 15pt;
+  margin-right: 90px;
+  text-align-last: right;
 }
 
 .game-grid {
@@ -41,7 +52,6 @@ body{
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 15px;
   margin-top: 50px;
-
 }
 
 .game-cell {
@@ -53,9 +63,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
 
 .x::after {
   content: '✕';
