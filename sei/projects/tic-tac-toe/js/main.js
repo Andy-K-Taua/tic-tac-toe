@@ -32,41 +32,41 @@ const winMessage = document.querySelector("#winMessage")
 
 //Across
   if (topLeft === player && topMiddle === player && topRight === player){
-    console.log("x wins");
+    console.log(`${player} wins`);
     winMessage.innerHTML=(`${player} wins top row`)
   }
   if (middleLeft === player && middleMiddle === player && middleRight === player){
-    console.log("x wins");
+    console.log(`${player} wins`);
     winMessage.innerHTML=(`${player} wins middle row`)
   }
   if (bottomLeft === player && bottomMiddle === player && bottomRight === player){
-    console.log("x wins");
+    console.log(`${player} wins`);
     winMessage.innerHTML=(`${player} wins bottom row`)
   }
 
 //Down
   if (topLeft === player && middleLeft === player && bottomLeft === player){
-    console.log("x wins");
+    console.log(`${player} wins`);
     winMessage.innerHTML=(`${player} wins left column`)
   }
   if (topMiddle === player && middleMiddle === player && bottomMiddle === player){
-    console.log("x wins");
+    console.log(`${player} wins`);
     winMessage.innerHTML=(`${player} wins middle column`)
   }
   if (topRight === player && middleRight === player && bottomRight === player){
-    console.log("x wins");
+    console.log(`${player} wins`);
     winMessage.innerHTML=(`${player} wins right column`)
   }
 
 //Diagonal from the topLeft
  if (topLeft === player && middleMiddle === player && bottomRight === player){
-   console.log("x wins");
+   console.log(`${player} wins`);
    winMessage.innerHTML=(`${player} wins diagonal`)
  }
 
  //Diagonal from topRight
  if (topRight === player && middleMiddle === player && bottomLeft === player){
-   console.log("x wins");
+   console.log(`${player} wins`);
    winMessage.innerHTML=(`${player} wins diagonal`)
  }
  //========================================
