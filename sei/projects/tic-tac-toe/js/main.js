@@ -18,6 +18,8 @@ const checkGamesStatus = function(player) {
   const bottomMiddle = $cellDivs.eq(7).hasClass(player)
   const bottomRight = $cellDivs.eq(8).hasClass(player)
 
+  //hasClass checks the selected elements have a specified class name 'player' returns true if the specified class is present in any of the selected elements
+
 const $winMessage = $("#winMessage");
 
 //================== Across
