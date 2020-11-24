@@ -1,38 +1,38 @@
 def values
-  [gets, gets].map{ |s| s.chomp.to_i }
+  [gets, gets].map{ |x| x.chomp.to_i }
 end
 
-puts "Pick and operation (+,-,*,/,^,)"
+puts "Pick a operation (+,-,*,/,^,)"
 response = gets.chomp
 
-case response.downcase
+case response
 when "+"
   puts "which numbers would you like to add?"
   operator = :+
 end
 
-case response.downcase
+case response
 when "-"
   puts "which numbers would you like to minus?"
   operator = :-
 end
 
-case response.downcase
+case response
 when "*"
   puts "which numbers would you like to times?"
   operator = :*
 end
 
-case response.downcase
+case response
 when "/"
   puts "which numbers would you like to divide?"
   operator = :/
 end
 
-case response.downcase
+case response
 when "^"
   puts "which numbers would you like to the power of?"
-  operator = :^
+  operator = :**
 end
 
 
