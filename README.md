@@ -1,5 +1,3 @@
-This is a template that you can reference when completing your projects at GA.
-
 # Tic-Tac-Toe
 This project was my very first project at GA. I will continuously be revisiting this game to update new features.  
 ## Link
