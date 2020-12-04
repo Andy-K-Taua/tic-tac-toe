@@ -1,7 +1,7 @@
 # Tic-Tac-Toe
 This project was my very first project at GA. I will continuously be revisiting this game to update new features.  
 ## Link
-[live demo](https://github.com/Andy-K-Taua/tic-tac-toe)
+https://andy-k-taua.github.io/tic-tac-toe/.
 ## How it was built (Or you can call this Technologies Used)
 I used:
 
