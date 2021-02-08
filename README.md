@@ -22,7 +22,7 @@ The console understands which player will go first/second etc
 ## Known Bugs
 
 - Status does not update or generate to nil during game play
-- It's not mobile-responsive currently.
+- Mobile-responsive
 - The game continues even though someone wins
 ## Future features
 - Networked multiplayer
