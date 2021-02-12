@@ -73,11 +73,11 @@ body{
 }
 
 .x::after {
-  content: '✕';
+  content: 'x';
   font-size: 156px;
 } /*used the pseudo element for specific styling, xbox x & o - */
 
 .o::after {
-  content: '○';
-  font-size: 290px;
+  content: 'o';
+  font-size: 200px;
 }

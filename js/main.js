@@ -1,5 +1,3 @@
-
-
 const $cellDivs = $('.game-cell');
 
 let currentPlayer = "x"
@@ -79,12 +77,6 @@ const $winMessage = $("#winMessage");
 
  }
 
-if (#winMessage === ) {
-  $("#winMessage").html('')
-  return true;
-}
-
-
  return false; // We will only get here if no win was found
 
 }; //End of checkGamesStatus function
@@ -94,8 +86,6 @@ $("#resetButton").on("click", function (){
   $cellDivs.removeClass('x o');
   numClicks = 0;
 });
-
-
 
 $cellDivs.on("click", function (){
 
