@@ -83,3 +83,8 @@ body{
   font-size: 182px;
   padding-bottom: 21px;
 }
+
+.zoom
+{
+    zoom: 50%;
+}
