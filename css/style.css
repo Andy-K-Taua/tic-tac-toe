@@ -84,7 +84,7 @@ body{
   padding-bottom: 21px;
 }
 
-.zoom
+#zoom
 {
-    zoom: 50%;
+    zoom: 50px;
 }
