@@ -3,88 +3,97 @@ body{
   color: #3aeb34;
   font-family: 'Goldman', cursive;
   font-size: xx-large;
+  /* position: relative; */
 
 }
 
 .gameBox {
   background: black;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 15px;
-  width: 630px;
+  margin: 47px auto;
+  padding: 10px;
+  border-radius: 18px;
+  width: 197px;
+  height: 285px;
 }
 
 .scoreboard {
   background: black;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 20px;
-  width: 630px;
-  height: 300px;
-  border-bottom-width: 26px;
-  padding-bottom: 64px;
-
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 20px;
+      width: 509px;
+      height: 174px;
+      border-bottom-width: 26px;
+      padding-bottom: 64px;
 }
 
 .title {
   text-align: center;
   margin-top: 20px;
+  font-size: 20px;
 }
 
 #scoreboard {
-  font-size: 30pt;
+  font-size: 20px;
   text-align: center;
 }
 
 #xWins {
-  font-size: 20pt;
+  font-size: 20px;
   text-align-last: right;
 }
 
 #oWins {
-  font-size: 20pt;
+  font-size: 20px;
   text-align-last: right;
 }
 
 #resetButton {
   color: Grey;
   cursor: pointer;
-
 }
 
-.game-grid {
-  background: #02010a;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 15px;
-  margin-top: 50px;
-} /*fr fractional unit.*/
-
-.game-cell {
-  height: 200px;
-  width: 200px;
-  background: #f5f5fa;
-  border-radius: 12px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#winMessage {
+  font-size: 20px;
 }
 
-.x::after {
-  content: 'x';
-  font-size: 156px;
-  padding-bottom: 21px;
-} /*used the pseudo element for specific styling, xbox x & o - */
-
-.o::after {
-  content: 'o';
-  font-size: 182px;
-  padding-bottom: 21px;
+#scoreboard {
+  font-size: 20px;
+  text-align: center;
 }
 
-.zoom
-{
-    zoom: 50%;
+@media only screen and (max-width: 3000px) {
+
+  .game-grid {
+    background: #02010a;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+    margin-left: 4px;
+    } /*fr fractional unit.*/
+
+    .game-cell {
+      height: 50px;
+      width: 50px;
+      background: #f5f5fa;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .x::after {
+      content: 'x';
+      font-size: 50px;
+      padding-bottom: 8px;
+      }
+
+      .o::after {
+        content: 'o';
+        font-size: 50px;
+        padding-bottom: 8px;
+      }
 }
