@@ -11,7 +11,7 @@
 
 <div class="box">
 <button id="zoomOut">- zoom out</button>
-<button id="zoomIn">+ zoom in</button>
+<!-- <button id="zoomIn">+ zoom in</button> -->
 </div>
 
 <article>
@@ -48,10 +48,10 @@
 var zoom = 1;
 var zoomStep = 0.2;
 
-document.getElementById("zoomIn").addEventListener("click", function() {
-  zoom += zoomStep;
-  document.getElementById("zoomWindow").style.transform = "scale(" + zoom + ")";
-});
+// document.getElementById("zoomIn").addEventListener("click", function() {
+//   zoom += zoomStep;
+//   document.getElementById("zoomWindow").style.transform = "scale(" + zoom + ")";
+// });
 document.getElementById("zoomOut").addEventListener("click", function() {
   if (zoom > zoomStep) {
     zoom -= zoomStep;
