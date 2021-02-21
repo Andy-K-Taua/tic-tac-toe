@@ -3,14 +3,21 @@
 <head>
 <meta name="image" property="og:image" content="image/final.png">
 
-<div id="zoom">
 <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+
+<div class="box">
+<button id="zoomOut">- zoom out</button>
+<button id="zoomIn">+ zoom in</button>
+</div>
+
+<article>
+  <section id="zoomWindow">
     <div class="gameBox">
+<body>
     <h1 class="title">Tic Tac Toe</h1>
 
 <div class="game-grid">
@@ -31,10 +38,28 @@
     <div id="xWins" class="title">x total:</div>
     <div id="oWins" class="title">o total:</div>
     <div id="resetButton">Reset</div>
-  </div> <!-- scoreboard container -->
+  </div>
 </div>
-
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
+ </section>
+</article>
+<script>
+var zoom = 1;
+var zoomStep = 0.2;
+
+document.getElementById("zoomIn").addEventListener("click", function() {
+  zoom += zoomStep;
+  document.getElementById("zoomWindow").style.transform = "scale(" + zoom + ")";
+});
+document.getElementById("zoomOut").addEventListener("click", function() {
+  if (zoom > zoomStep) {
+    zoom -= zoomStep;
+    document.getElementById("zoomWindow").style.transform = "scale(" + zoom + ")";
+  }
+});
+</script>
 </body>
+
+
 </html>

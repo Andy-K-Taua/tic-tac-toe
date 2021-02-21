@@ -3,7 +3,7 @@ body{
   color: #3aeb34;
   font-family: 'Goldman', cursive;
   font-size: xx-large;
-
+  /* border: 3px solid #73AD21 */
 }
 
 .gameBox {
@@ -23,7 +23,7 @@ body{
   height: 300px;
   border-bottom-width: 26px;
   padding-bottom: 64px;
-
+  border: 3px solid #73AD21
 }
 
 .title {
@@ -84,7 +84,27 @@ body{
   padding-bottom: 21px;
 }
 
-#zoom
-{
-    zoom: 50px;
+#zoomIn {
+  height: 80px;
+  width: 80px;
+  border-radius: 15px;
+
+}
+
+#zoomOut {
+  height: 80px;
+  width: 80px;
+  border-radius: 15px;
+  align-items: flex-end;
+}
+
+.box {
+
+position: absolute;
+/* border: 3px solid #73AD21; */
+padding: 10px;
+right: 0;
+left: 7px;
+top: 0px;
+
 }
