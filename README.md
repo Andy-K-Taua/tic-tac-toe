@@ -1,9 +1,6 @@
 # Tic-Tac-Toe
 This project was my very first project at GA. I will continuously be revisiting this game to update new features.  
 
-## Link
-https://andy-k-taua.github.io/tic-tac-toe/.
-
 ## How it was built (Or you can call this Technologies Used)
 Tech Stack:
 
@@ -28,3 +25,6 @@ Mobile-responsive
 ## Future features
 
 - Networked multiplayer
+
+# Live Demo
+[View Project Here](https://andy-k-taua.github.io/tic-tac-toe/)

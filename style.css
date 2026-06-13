@@ -1,0 +1,52 @@
+:root {
+    --bg-color: #02010a;
+    --accent-color: #3aeb34;
+    --cell-color: #f5f5fa;
+}
+
+body {
+    background: #111;
+    color: var(--accent-color);
+    font-family: 'Goldman', cursive;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 15px;
+    margin: 20px auto;
+}
+
+.game-cell {
+    height: 150px;
+    background: var(--cell-color);
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: black;
+}
+
+/* Logic for markers */
+.game-cell.x::after { content: 'X'; }
+.game-cell.o::after { content: 'O'; }
+
+.scoreboard {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#resetButton {
+    background: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
