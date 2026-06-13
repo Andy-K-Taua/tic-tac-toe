@@ -1,30 +1,31 @@
 # Tic-Tac-Toe
-This project was my very first project at GA. I will continuously be revisiting this game to update new features.  
 
-## How it was built (Or you can call this Technologies Used)
-Tech Stack:
+This project served as my foundational technical challenge during my time at General Assembly. I am actively maintaining this codebase, with ongoing plans to refine the user experience and implement additional functionality.
 
-- HTML
-- CSS
-- JavaScript
-- jQuery
+## Technical Stack
 
-## Features
+* **HTML5**
+* **CSS3**
+* **JavaScript (ES6+)**
 
-This game gives you an indication of which player and on which row/column has won
-The game also keeps a score for both players
-The console understands which player will go first/second etc
-Mobile-responsive
+## Key Features
 
-## Known Bugs
+* **Win Tracking:** Provides clear visual feedback on the winning player and the specific winning combination (row, column, or diagonal).
+* **Scorekeeping:** Automatically maintains an active tally of wins for both players.
+* **Turn Management:** Intelligent turn-handling logic ensures sequential player rotation.
+* **Responsive Design:** Fully optimized for seamless performance across mobile and desktop devices.
 
-- Status does not update or generate to nil during game play
-- The game continues even though someone wins
-- 'o' sizing issue
+## Current Limitations & Known Issues
 
-## Future features
+* **Win State Logic:** The game currently permits further moves after a win condition has been met.
+* **UI Synchronization:** Occasional inconsistencies in status updates during active gameplay.
+* **Visual Alignment:** Minor display issues regarding 'O' character scaling and alignment.
 
-- Networked multiplayer
+## Future Roadmap
 
-# Live Demo
+* **Networked Multiplayer:** Integration of real-time, peer-to-peer gameplay functionality.
+
+---
+
+### Live Demo
 [View Project Here](https://andy-k-taua.github.io/tic-tac-toe/)
