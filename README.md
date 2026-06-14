@@ -27,4 +27,4 @@ I am currently addressing the following items to improve the application’s sta
 ---
 
 ### Live Demo
-[View Project Here](https://andy-k-taua.github.io/tic-tac-toe/)
+[View Project Here](https://andy-k-taua.github.io/Tic-Tac-Toe/)
