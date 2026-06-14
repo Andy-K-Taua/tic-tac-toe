@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-This project served as my foundational technical challenge during my time at General Assembly. I am actively maintaining this codebase, with ongoing plans to refine the user experience and implement additional functionality.
+This project was developed as a foundational technical challenge during my software engineering training at General Assembly. It represents my ongoing commitment to code maintenance and professional refinement, with active plans to enhance the user interface and expand the application's core functionality.
 
 ## Technical Stack
 
@@ -10,20 +10,19 @@ This project served as my foundational technical challenge during my time at Gen
 
 ## Key Features
 
-* **Win Tracking:** Provides clear visual feedback on the winning player and the specific winning combination (row, column, or diagonal).
-* **Scorekeeping:** Automatically maintains an active tally of wins for both players.
-* **Turn Management:** Intelligent turn-handling logic ensures sequential player rotation.
-* **Responsive Design:** Fully optimized for seamless performance across mobile and desktop devices.
+* **Win Detection:** Implements logic to identify winning combinations (rows, columns, and diagonals) and provides immediate visual confirmation of the victor.
+* **Persistent Scorekeeping:** Maintains a real-time tally of match outcomes throughout the session.
+* **Turn Management:** Robust state management ensures sequential, alternating turns between players.
+* **Responsive Design:** Fully optimized for a consistent user experience across mobile, tablet, and desktop devices.
 
-## Current Limitations & Known Issues
+## Development Status & Roadmap
 
-* **Win State Logic:** The game currently permits further moves after a win condition has been met.
-* **UI Synchronization:** Occasional inconsistencies in status updates during active gameplay.
-* **Visual Alignment:** Minor display issues regarding 'O' character scaling and alignment.
+I am currently addressing the following items to improve the application’s stability and feature set:
 
-## Future Roadmap
-
-* **Networked Multiplayer:** Integration of real-time, peer-to-peer gameplay functionality.
+* **State Control:** Restricting input once a win condition is triggered to prevent post-game moves.
+* **UI Synchronization:** Refining status messaging to ensure real-time accuracy during gameplay.
+* **Visual Refinement:** Standardizing element scaling and alignment for the game board characters.
+* **Multiplayer Integration:** Future plans include the implementation of real-time, peer-to-peer connectivity.
 
 ---
 
